@@ -62,6 +62,7 @@ const ProductDetails = () => {
       
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <div className="tab-div">
           <Tabs
             value={value}
             onChange={handleChange}
@@ -71,6 +72,7 @@ const ProductDetails = () => {
             <Tab label="Two" {...a11yProps(1)} />
             <Tab label="Three" {...a11yProps(2)} />
           </Tabs>
+          </div>
         </Box>
         <TabPanel value={value} index={0}>
           <One/>
